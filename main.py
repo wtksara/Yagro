@@ -6,3 +6,4 @@ production_line = ProductionLine([1, 2, 5], 5, [None, 'A', 'B'], [.3, .3, .3])
 production_line.simulation(100)
 # Result of the simulation
 production_line.result()
+del production_line

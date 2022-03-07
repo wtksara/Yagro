@@ -61,8 +61,6 @@ class ProductionLine:
             else:
                 self.conveyor.insert(0, None)
 
-            print(self.conveyor)
-
             # Pair of workers are checking the conveyor
             for top_worker, bottom_worker in zip(self.workers[0::2], self.workers[1::2]):
                 top_worker.check_conveyor(self.conveyor)
@@ -73,8 +71,6 @@ class ProductionLine:
             # Resetting the actions of workers after each loop
             for worker in self.workers:
                 worker.performed = False
-            print(self.conveyor)
-            print("")
 
     # Function, which shows results of the production line
     def result(self):
