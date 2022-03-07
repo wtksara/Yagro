@@ -1,6 +1,5 @@
-
 # User input
-user_input = input ( "Enter word : ")
+user_input = input("Enter word : ")
 
 # Open file
 file = open('linux.words', "r")
